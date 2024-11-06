@@ -30,7 +30,7 @@
 Summary:        Linux Kernel
 Name:           kernel
 Version:        6.6.57.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPLv2
 Vendor:         Microsoft Corporation
 Distribution:   Azure Linux
@@ -407,6 +407,9 @@ echo "initrd of kernel %{uname_r} removed" >&2
 %{_sysconfdir}/bash_completion.d/bpftool
 
 %changelog
+* Wed Nov 06 2024 Ankita Pareek <ankitapareek@microsoft.com> - 6.6.57.1-3
+- Enable CONFIG_INTEL_TDX_GUEST and CONFIG_TDX_GUEST_DRIVER
+
 * Wed Oct 30 2024 Thien Trung Vuong <tvuong@microsoft.com> - 6.6.57.1-2
 - UKI: remove noxsaves parameter from cmdline
 
